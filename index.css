@@ -1,0 +1,43 @@
+#title {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+#turnsLeft {
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    gap: 5px;
+}
+
+#scores {
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    gap: 60px;
+    text-align: center;
+}
+
+#userScore p {
+    align-content: center;
+}
+
+#userChoices {
+    display: flex;
+    justify-content: center;
+}
+
+#userChoices img {
+    width: 150px;
+    height: 150px;
+    align-content: center;
+    padding: 10px;
+}
+
+#resetButton {
+    display: flex;
+    justify-content: center;
+}
