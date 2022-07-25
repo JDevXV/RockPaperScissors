@@ -280,3 +280,7 @@ reset.addEventListener('click', (e) => {
 	userTurnsLeft.innerHTML = turnsLeft;
 
 })
+
+
+
+
