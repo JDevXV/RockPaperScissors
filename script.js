@@ -80,10 +80,10 @@ const roundWinner = (you, computer) => {
 			userTurnsLeft.innerHTML = turnsLeft;
 
 			//Update status to current Round
-			status.innerHTML = `Round ${round}: YOU!`;
+			status.innerHTML = `Round ${round} - YOU!`;
 
-			//Console when round is lost
-			// console.log(`You WIN round ${round}! ${yourTurnsLeft} turns left!`);
+			// Console when round is lost
+			console.log(`You WIN round ${round}! ${turnsLeft} turns left!`);
 	}
 	else if(you === computer){
 
@@ -94,7 +94,7 @@ const roundWinner = (you, computer) => {
 		turnsLeft--;
 
 		// Update status to current Round
-		status.innerHTML = `Round ${round}: DRAW!`;
+		status.innerHTML = `Round ${round} - DRAW!`;
 
 		//Update turns left
 		userTurnsLeft.innerHTML = turnsLeft;
@@ -119,7 +119,7 @@ const roundWinner = (you, computer) => {
 		userTurnsLeft.innerHTML = turnsLeft;
 
 		// Update status to current Round
-		status.innerHTML = `Round ${round}: CPU!`;
+		status.innerHTML = `Round ${round} - CPU!`;
 
 		//Console.log when round is lost
 		// console.log(`You LOSE round ${round}!  CPU has ${computerTurnsLeft} turns left!`);
@@ -265,7 +265,7 @@ reset.addEventListener('click', (e) => {
 	round = 0;
 
 	//Assign updated round to status
-	status.innerHTML = `Round ${round}:`;
+	status.innerHTML = `Round ${round} - `;
 
 	//reset user choice
 	you.innerHTML = 'CHOOSE';
@@ -280,7 +280,3 @@ reset.addEventListener('click', (e) => {
 	userTurnsLeft.innerHTML = turnsLeft;
 
 })
-
-
-
-
