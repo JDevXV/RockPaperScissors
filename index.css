@@ -1,6 +1,9 @@
 #title {
     text-align: center;
 }
+body{
+    line-height: 10px;
+}
 
 h4 {
     text-align: center;
@@ -9,8 +12,9 @@ h4 {
 #turnsLeft {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-flow: row;
-    gap: 5px;
+    gap: 10px;
 }
 
 #scores {
@@ -40,4 +44,25 @@ h4 {
 #resetButton {
     display: flex;
     justify-content: center;
+}
+
+#statusDiv{
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+#userTurnsLeft{
+    font-size: 25px;
+    font-weight: 900;
+}
+
+#gamesUserWon{
+    font-weight: 1000;
+    font-size: 20px;
+}
+#gamesCPUWon{
+    font-weight: 1000;
+    font-size: 20px;
 }
