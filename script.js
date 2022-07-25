@@ -1,5 +1,4 @@
 
-
 //Assign dom elements to variables
 const rock = document.getElementById('rock');
 const paper = document.getElementById('paper');
@@ -54,7 +53,7 @@ userTurnsLeft.innerHTML = toWin;
 let round = 0;
 
 //Keep track of turns remaining
-let turnsLeft = 5;
+let turnsLeft = toWin;
 
 //initialize 'status' to 'Round 0'
 status.innerHTML = `Round ${round}`;
@@ -122,7 +121,7 @@ const roundWinner = (you, computer) => {
 		status.innerHTML = `Round ${round} - CPU!`;
 
 		//Console.log when round is lost
-		// console.log(`You LOSE round ${round}!  CPU has ${computerTurnsLeft} turns left!`);
+		console.log(`You LOSE round ${round}! ${turnsLeft} turns left!`);
 	}
 }
 
@@ -257,10 +256,6 @@ reset.addEventListener('click', (e) => {
 	gamesUserWon.innerHTML = gamesUserWonInteger;
 	gamesCPUWon.innerHTML = gamesCPUWonInteger;
 
-	//reset turns left to original value
-	// userTurnsLeft.innerHTML = turns;
-	// turnsLeftForComputer.innerHTML = turns;
-
 	//reset round to 0
 	round = 0;
 
@@ -274,7 +269,7 @@ reset.addEventListener('click', (e) => {
 	computer.innerHTML = 'CHOOSE';
 
 	//reset turns left
-	turnsLeft = 5;
+	turnsLeft = toWin;
 
 	//reset turnsLeft innerHTML
 	userTurnsLeft.innerHTML = turnsLeft;
