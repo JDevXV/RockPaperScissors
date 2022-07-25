@@ -23,6 +23,7 @@ h4 {
     flex-flow: row;
     gap: 60px;
     text-align: center;
+    line-height: 15px;
 }
 
 #userScore p {
@@ -51,6 +52,7 @@ h4 {
     align-items: center;
     font-weight: 900;
     font-size: 20px;
+    line-height: 20px;
 }
 
 #userTurnsLeft{
